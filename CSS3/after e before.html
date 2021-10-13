@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+	<head>
+
+		<title>HTML5</title>
+
+		<script language="javascript">
+			
+		</script>
+		
+		<style>
+			
+		p::before{
+			content:"Estudando ";
+			color:#f00;
+			
+		}
+		
+		p::after{
+			content:"- E CSS tambem";
+			color:#00f;
+			
+		}
+		
+		p{font-size:20pt;}
+			
+		.classe::after{
+			content:"- E CSS tambem";
+			color:#00f;}
+		</style>
+
+	</head>
+
+		
+	<body>
+	
+		<p> javascript muito louco</p>
+		<p> javascript muito louco</p>
+		<p> javascript muito louco</p>
+		
+		<div id="d1" class="classe">DIV 1
+		</div>
+		
+		<div id="d2"> DIV 2
+		</div>
+		
+		<!--
+			before adiciona elementos antes do elemento real
+			p::before{
+			content:"E CSS tambem - "; o que sera acrescentado
+			color:#f00;
+			}
+			content:url(); add imagens
+			
+			after acrescenta depois do elemento
+			p::after{
+			content:"- E CSS tambem";
+			color:#00f;
+		}
+		-->
+		
+	</body>
+
+</html>

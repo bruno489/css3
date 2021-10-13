@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+	<head>
+
+		<title>HTML5</title>
+
+		<script language="javascript">
+			
+		</script>
+		
+		<style>
+
+			section{
+				border:3px solid #f00;
+				flex-wrap:wrap;
+				display:flex;
+				
+				justify-content:flex-start;
+				align-items:flex-start;
+				flex-direction:row;
+			}
+			
+			div{
+				border:1px solid #000;
+				text-align:center;
+				vertical-align:middle;
+				height:200px;
+				/*flex:1;*/
+				
+			}
+			
+			#d1{
+				order:1;
+				width:100px;
+				
+			}
+			
+			#d2{
+				order:2;
+				width:100px;
+				flex-basis: 100%;
+			}
+			#d3{
+				order:3;
+				width:100px;
+			}
+			#d4{
+				order:4;
+				width:100px;
+			}
+			#d5{
+				order:5;
+				width:100px;
+			}
+			#d6{
+				order:6;
+				width:100px;
+				flex-grow:0;
+			}
+			
+		</style>
+
+	</head>
+
+		
+	<body>
+		
+		<section id="s1">
+			<div id="d1">DIV 1</div>
+			<div id="d2">DIV 2</div>
+			<div id="d3">DIV 3</div>
+			<div id="d4">DIV 4</div>
+			<div id="d5">DIV 5</div>
+			<div id="d6">DIV 6</div>
+			<div id="d6">DIV 6</div>
+			<div id="d6">DIV 6</div>
+			<div id="d6">DIV 6</div>
+			<div id="d6">DIV 6</div>
+		</section>
+		
+		
+		<!--
+			flex é para o que está dentro do conteiner e dever ser configurado no elemento filho
+			
+			flex:1; o elemento se ajuste no elemento pai
+			
+			order:1; determina a ordem do elemento
+			
+			flex-grow: controla a capacidade de expanção
+			flex-grow:0; não expande
+			flex-grow:1; expande
+			
+			flex-shrink: capacidade de contração
+			flex-shrink:1; contrai
+			flex-shrink:0; não contrai
+			
+			flex-basis: a area que ocupa na div
+			flex-basis: 100%; é toda a area da div
+			flex-basis: auto;
+			-->
+		
+	</body>
+
+</html>

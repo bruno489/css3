@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .item{
+            margin: 5px;
+            padding: 5px;
+            background: #447;
+            text-align: center;
+            font-size: 1em;
+            color: #fff;
+        }
+
+        .container{
+            max-width: 500px;
+            margin: 0 auto;
+            border: 1px solid #000;
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+
+        .flexivel{
+            display: flex;
+        }
+
+        body{
+            font-family: arial;
+            color:  #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container flexivel">
+        <div class="item">CFB Cursos 1</div>
+        <div class="item">CFB Cursos 2</div>
+        <div class="item">CFB Cursos 3</div>
+        <div class="item">CFB Cursos 4</div>
+        <div class="item">CFB Cursos 5</div>
+        <div class="item">CFB Cursos 6</div>
+    </div>
+</body>
+<!--
+    justify-content alinha o ITENS na horizontal
+
+    justify-content: flex-start;
+    posiciona no começo da direção apontada pelo flex-direction
+
+    justify-content: flex-end;
+    posiciona no final da direção apontada pelo flex-direction
+
+    justify-content: center;
+    Posiciona no centro
+
+    justify-content: space-between;
+    posiciona os elementos com um espaçammento igual entre eles
+    sendo que o primeiro elemento fica no começo do container 
+    e o ultimo no final
+
+    justify-content: space-around;
+    distribui igualmente os elementos com o dobra de espaço entre elementos
+
+-->
+</html>

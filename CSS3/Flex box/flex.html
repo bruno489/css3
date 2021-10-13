@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .item{
+            margin: 5px;
+            padding: 5px;
+            background: #447;
+            text-align: center;
+            font-size: 1em;
+            color: #fff;
+        }
+
+        .container{
+            max-width: 500px;
+            height: 400px;
+            margin: 0 auto;
+            border: 1px solid #000;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        .flexivel{
+            display: flex;
+        }
+
+        .tam0{flex-grow: 0;}
+        .tam1{flex-grow: 1;}
+        .tam2{flex-grow: 2;}
+        .tam3{flex-grow: 3;}
+
+        .basea{flex-basis: auto;}
+        .base0{flex-basis: 0;}
+        .base1{flex-basis: 1;}
+        .base2{flex-basis: 2;}
+
+        .reduzir0{flex-shrink: 0;}
+        .reduzir1{flex-shrink: 1;}
+        .reduzir2{flex-shrink: 2;}
+
+        .flex0{flex: 3 2 200;}
+
+        .aux{
+            flex-grow: 3;
+            flex-shrink: 2;
+            flex-basis: 200;
+        }
+
+        body{
+            font-family: arial;
+            color:  #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container flexivel">
+        <div class="item flex0">CFB</div>
+        <div class="item aux">CFB Cursos 2</div>
+        <div class="item flex0">CFB Cursos Cursos</div>
+    </div>
+</body>
+<!--
+    flex nada mais é do que um atalho para flex-grow, flex-shrink, flex-basis
+
+    por padrão
+    flex-grow, flex-shrink, flex-basis
+    n,          1,             0
+
+    flex:0; significa que está colocando os tres no padrao
+    e tudo será configurado como acima
+
+    flex:1; é o mesmo que
+    flex-grow, flex-shrink, flex-basis
+    1,          1,             0
+
+    flex: 3 2 200;
+    flex-grow: 3; flex-shrink: 2; flex-basis: 200;
+
+-->
+</html>

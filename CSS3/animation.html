@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+	<head>
+
+		<title>HTML5</title>
+
+		<script language="javascript">
+			
+		</script>
+		
+		<style>
+		
+		@keyframes anima1{
+			from{left:500px; border:0px solid #fff; color:white;}
+			to{left:0px; border:1px solid #000; color:black;}
+		}
+
+		@keyframes anima2{
+			from{background:#fff;}
+			to{background:#0f0;}
+		}
+		
+		p{
+			position:relative;
+			width:300px;
+			height:250px;
+			border:1px solid #000;
+			border-radius:10px;
+			padding:10px;
+			text-align:justify;
+			animation-name:anima1,anima2;
+			animation-duration:3s;
+			animation-delay:0s,4s;
+			}
+			
+		
+		</style>
+
+	</head>
+
+		
+	<body>
+	
+		<p> Javascript muito louco</p>
+		
+		
+		
+		
+		<!--
+			animation é executado quando se abre a pagina
+			
+			@keyframes anima1{
+			from{}
+			to{}
+			}
+			
+			@animação que interpola de um quadro a outro nome da animação{
+			de{} primeiro quadro chave
+			para{} ultimo quadro chave
+
+			@keyframes anima1{
+			from{left:0px; top:0px;}
+			to{left:500px; top:500px;}
+			} para mais de um é só separar por ponto e virgula
+
+			animation-name:anima1,anima2; para executar as duas animações
+			
+			animation-delay:0s,4s; o primeiro tempo para a primeira 
+			animação e o segundo para a segunda
+		}
+		-->
+		
+	</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+	<head>
+
+		<title>HTML5</title>
+
+		<script language="javascript">
+			
+			var y,n=0,ny=0,rotYINT;
+			
+			function rotateYDIV(){
+				y=document.getElementById("d1");
+				clearInterval(rotYINT);
+				rotYINT=setInterval("startYRotate()",10);
+			}
+			
+			function startYRotate(){
+				ny++;
+				y.style.transform="rotateY(" + ny + "deg) translate(200px,200px)";
+				if(ny==180 || ny==360){
+					clearInterval(rotYINT);
+					if(ny>=360){ny=0;}
+				}
+			}
+			
+		</script>
+		
+		<style>
+			
+			div{
+				border:1px solid #000;
+				width:200px;
+				height:200px;
+				transform:translate(200px,200px);
+				transform-origin:200px 200px;
+				
+			}
+			
+			body{perspective:800px;}
+			
+		</style>
+
+	</head>
+
+		
+	<body>
+	
+		<div id="d1" onclick="rotateYDIV()">Teste 1</div>
+		
+		
+		<!--
+			transform:rotateY(45deg); gira o objeto no eixo Y
+			
+			backface-visibility:hidden; da para ver a parte de tras
+			backface-visibility:visible; não da para ver
+		-->
+		
+	</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            font: arial;
+            color: black;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 5px 10px;
+        }
+
+        .item{
+            background-color: #048;
+            color:white;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        .iti{
+            /*grid-column-start: 1;
+            grid-column-end: 3;*/
+            /*grid-column: 1/1;*/
+            grid-column: 1/span 2;
+            /*grid-row: 1/3;*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item iti">CFB Cursos 1</div>
+        <div class="item ">CFB Cursos 2</div>
+        <div class="item ">CFB Cursos 3</div>
+        <div class="item ">CFB Cursos 4</div>
+        <div class="item ">CFB Cursos 5</div>
+        <div class="item ">CFB Cursos 6</div>
+    </div>
+    
+<!--
+    grid-column-start: 1;
+    grid-column-end: 3;
+    começa na coluna 1 e termina na coluna 3
+
+    grid-column: 1/3; é o resumo da acima
+
+    grid-row: 1/3;
+    mesma coisa só que com linha
+
+    grid-column: 1/span 2;
+    começa na coluna 1 expande para a 2
+-->
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .item{
+            margin: 5px;
+            padding: 5px;
+            background: #447;
+            text-align: center;
+            font-size: 1em;
+            color: #fff;
+            
+        }
+
+        .container{
+            max-width: 500px;
+            height: 400px;
+            margin: 0 auto;
+            border: 1px solid #000;
+            flex-flow: row wrap;
+            justify-content: center;
+            /*align-items: baseline;*/
+            align-content: space-between;
+        }
+
+        .flexivel{
+            display: flex;
+        }
+
+        .tam0{flex-grow: 0;}
+        .tam1{flex-grow: 1;}
+        .tam2{flex-grow: 2;}
+        .tam3{flex-grow: 3;}
+
+        .basea{flex-basis: auto;}
+        .base0{flex-basis: 0;}
+        .base1{flex-basis: 1;}
+        .base2{flex-basis: 2;}
+
+        .ordem0{order: 0;}
+        .ordem1{order: 1;}
+        .ordem2{order: 2;}
+
+        body{
+            font-family: arial;
+            color:  #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container flexivel">
+        <div class="item tam1 base1 ordem1">CFB Cursos 1</div>
+        <div class="item tam1 base1 ordem2">CFB Cursos 2</div>
+        <div class="item tam1 base1 ordem0">CFB Cursos 3</div>
+    </div>
+</body>
+<!--
+    order serve para redefinir a ordem dos elementos
+
+-->
+</html>
